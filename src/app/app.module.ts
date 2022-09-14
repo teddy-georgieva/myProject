@@ -9,8 +9,8 @@ import {MatButtonModule} from '@angular/material/button';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomePageComponent } from './component/home-page/home-page.component';
-import { FormPageComponent } from './component/form-page/form-page.component';
+import { HomePageComponent } from './pages/home-page/home-page.component';
+import { FormPageComponent } from './pages/form-page/form-page.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
