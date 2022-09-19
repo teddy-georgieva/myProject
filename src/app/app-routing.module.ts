@@ -3,6 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { FormPageComponent } from './pages/form-page/form-page.component';
+import { TableComponent } from './component/table/table.component';
+import { StepperComponent } from './component/stepper/stepper.component';
 
 
 const routes: Routes = [
@@ -13,6 +15,10 @@ const routes: Routes = [
   {
     path: 'form',
     component: FormPageComponent,
+  },
+  {
+    path: 'stepper',
+    component: StepperComponent,
   },
 ];
 

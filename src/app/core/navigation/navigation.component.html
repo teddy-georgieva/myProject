@@ -1,0 +1,22 @@
+<nav>
+  <ul #mainNav class="d-flex align-center main-nav">
+    <li class="marginLeftControl">
+        <p class="fullname">Teddy</p>
+    </li>
+    <li class="navigationLiks">
+      <a [routerLinkActive]="['isActive']" routerLink="/">
+        Home
+      </a>
+    </li>
+    <li class="navigationLiks">
+      <a [routerLinkActive]="['isActive']" routerLink="/about">
+        About us
+      </a>
+    </li>
+    <li class="navigationLiks">
+      <a [routerLinkActive]="['isActive']" routerLink="/form">
+        Make an appointment
+      </a>
+    </li>
+  </ul>
+</nav>
