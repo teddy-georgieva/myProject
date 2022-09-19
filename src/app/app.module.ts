@@ -5,8 +5,7 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatInputModule } from '@angular/material/input';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatExpansionModule } from '@angular/material/expansion';
-import {MatButtonModule} from '@angular/material/button';
-import {MatDatepickerModule} from '@angular/material/datepicker';
+import { MatButtonModule} from '@angular/material/button';
 import { MatTableModule } from '@angular/material/table';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -14,14 +13,15 @@ import { AppComponent } from './app.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { FormPageComponent } from './pages/form-page/form-page.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { TableComponent } from './component/table/table.component';
+import { NavigationComponent } from './core/navigation/navigation.component';
+import { ComponentModule } from './component/component-module.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomePageComponent,
     FormPageComponent,
-    TableComponent,
+    NavigationComponent,
   ],
   imports: [
     BrowserModule,
@@ -34,8 +34,8 @@ import { TableComponent } from './component/table/table.component';
     MatRadioModule,
     MatExpansionModule,
     MatButtonModule,
-    MatDatepickerModule,
     MatTableModule,
+    ComponentModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
