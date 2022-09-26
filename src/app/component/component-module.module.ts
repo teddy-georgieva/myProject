@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { StepperComponent } from './stepper/stepper.component';
-import { TableComponent } from '../core/table/table.component';
 import { MatStepperModule } from '@angular/material/stepper';
 // import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatFormFieldModule} from '@angular/material/form-field';
@@ -19,11 +18,9 @@ import { MatIconModule } from '@angular/material/icon';
 @NgModule({
   declarations: [
     StepperComponent,
-    TableComponent,
   ],
   exports: [
     StepperComponent,
-    TableComponent,
   ],
   imports: [
     CommonModule,
