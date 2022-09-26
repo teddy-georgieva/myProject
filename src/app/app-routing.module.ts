@@ -4,6 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { FormPageComponent } from './pages/form-page/form-page.component';
 import { StepperComponent } from './component/stepper/stepper.component';
+import { AboutUsComponent } from './pages/about-us/about-us.component';
 
 
 const routes: Routes = [
@@ -18,6 +19,10 @@ const routes: Routes = [
   {
     path: 'stepper',
     component: StepperComponent,
+  },
+  {
+    path: 'aboutUs',
+    component: AboutUsComponent,
   },
 ];
 
