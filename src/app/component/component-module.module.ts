@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { StepperComponent } from './stepper/stepper.component';
-import { TableComponent } from './table/table.component';
+import { TableComponent } from '../core/table/table.component';
 import { MatStepperModule } from '@angular/material/stepper';
 // import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatFormFieldModule} from '@angular/material/form-field';
@@ -13,6 +13,7 @@ import { MatOptionModule } from '@angular/material/core';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule, MatRippleModule } from '@angular/material/core';
 import { MatIconModule } from '@angular/material/icon';
+
 
 
 @NgModule({

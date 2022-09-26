@@ -6,11 +6,22 @@ import {
   Validators,
 } from '@angular/forms';
 
+
 interface Categories {
   value: string;
   viewValue: string;
 }
 
+export interface PeriodicElement {
+  id: number;
+   firstName: string;
+   lastName: string;
+   email: string;
+   phone: string;
+   category: string;
+   procedure: string;
+   date: string;
+ }
 
 @Component({
   selector: 'app-stepper',
@@ -26,11 +37,9 @@ export class StepperComponent implements OnInit {
   ];
 
   firstFormGroup: FormGroup;
-  secondFormGroup: FormGroup;
 
   constructor(private formBuilder: FormBuilder) {
     this.firstFormGroup = this.firstBuildForm();
-    this.secondFormGroup = this.secondBuildForm();
   }
 
   private firstBuildForm(): FormGroup {
@@ -47,15 +56,12 @@ export class StepperComponent implements OnInit {
       phone: new FormControl('', Validators.required),
       category: new FormControl (this.categories[0], Validators.required),
       procedure: new FormControl('',Validators.required),
-    });
-  }
-
-  private secondBuildForm() {
-    return this.formBuilder.group({
-      date: new FormControl('', Validators.required)
+      date: new FormControl('', Validators.required),
     });
   }
 
   ngOnInit(): void {
+    console.log(this.firstFormGroup)
   }
 }
+
