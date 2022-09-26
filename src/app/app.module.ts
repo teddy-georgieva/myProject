@@ -15,6 +15,7 @@ import { FormPageComponent } from './pages/form-page/form-page.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavigationComponent } from './core/navigation/navigation.component';
 import { ComponentModule } from './component/component-module.module';
+import { EyesComponent } from 'src/assets/export/eyes';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { ComponentModule } from './component/component-module.module';
     HomePageComponent,
     FormPageComponent,
     NavigationComponent,
+    EyesComponent,
   ],
   imports: [
     BrowserModule,

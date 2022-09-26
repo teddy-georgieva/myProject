@@ -3,7 +3,6 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { FormPageComponent } from './pages/form-page/form-page.component';
-import { TableComponent } from './core/table/table.component';
 import { StepperComponent } from './component/stepper/stepper.component';
 
 
