@@ -31,17 +31,7 @@
         <mat-label>Procedure</mat-label>
         <input matInput formControlName="procedure" required>
       </mat-form-field>
-      <div>
-        <button mat-button matStepperNext>Next</button>
-      </div>
-    </form>
-  </mat-step>
 
-   <!-- second step -->
-  <mat-step [stepControl]="secondFormGroup">
-    <form [formGroup]="secondFormGroup">
-      <ng-template matStepLabel>Choose a date</ng-template>
-      <ng-template matStepLabel></ng-template>
       <mat-form-field class="example-full-width" appearance="fill">
         <mat-label>Choose a date</mat-label>
         <input matInput [matDatepicker]="picker" formControlName="date">
@@ -52,18 +42,20 @@
         <mat-datepicker #picker></mat-datepicker>
       </mat-form-field>
       <div>
-        <button mat-button matStepperPrevious>Back</button>
         <button mat-button matStepperNext>Next</button>
       </div>
     </form>
   </mat-step>
 
-  <!-- third step -->
+
+  <!-- second step -->
   <mat-step>
     <ng-template matStepLabel>Done</ng-template>
     <p>You are now done.</p>
     <div>
-      <button mat-button matStepperPrevious>Done</button>
+      <button>Done</button>
     </div>
   </mat-step>
 </mat-stepper>
+
+
